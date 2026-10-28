@@ -21,9 +21,9 @@ function Tag({ label }) { return <View style={styles.tag}><Text style={styles.ta
 export default function App() {
  const { width } = useWindowDimensions();
  return (<View style={styles.screen}><View style={[styles.card, width > 600 && styles.wideCard]}>
- 
+ <Image source={require('./assets/banner.png')} style={styles.banner} resizeMode="cover" accessible={false} />
  <View style={styles.content}>
- <Text style={styles.name}>Alex Rivera</Text><Text style={styles.role}>Mobile Developer</Text><Text style={styles.location}>Lisbon, Portugal</Text>
+ <View style={styles.avatarWrap}><Image source={require('./assets/avatar.png')} style={styles.avatar} accessibilityLabel="Alex Rivera's avatar" /></View><Text style={styles.name}>Alex Rivera</Text><Text style={styles.role}>Mobile Developer</Text><Text style={styles.location}>Lisbon, Portugal</Text>
  <Text style={styles.bio} numberOfLines={3}>{BIO}</Text>
  
  
