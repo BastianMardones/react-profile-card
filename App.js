@@ -23,9 +23,9 @@ export default function App() {
  return (<View style={styles.screen}><View style={[styles.card, width > 600 && styles.wideCard]}>
  <Image source={require('./assets/banner.png')} style={styles.banner} resizeMode="cover" accessible={false} />
  <View style={styles.content}>
- <View style={styles.avatarWrap}><Image source={require('./assets/avatar.png')} style={styles.avatar} accessibilityLabel="Alex Rivera's avatar" /></View><Text style={styles.name}>Alex Rivera</Text><Text style={styles.role}>Mobile Developer</Text><Text style={styles.location}>Lisbon, Portugal</Text>
+ <View style={styles.header}><View style={styles.avatarWrap}><Image source={require('./assets/avatar.png')} style={styles.avatar} accessibilityLabel="Alex Rivera's avatar" /></View><View style={styles.identity}><Text style={styles.name}>Alex Rivera</Text><Text style={styles.role}>Mobile Developer</Text><Text style={styles.location}>Lisbon, Portugal</Text></View></View>
  <Text style={styles.bio} numberOfLines={3}>{BIO}</Text>
- 
+ <View style={styles.stats}>{STATS.map((stat, index) => <StatItem key={stat.label} label={stat.label} value={stat.value} divider={index > 0} />)}</View>
  
  </View></View></View>);
 }
