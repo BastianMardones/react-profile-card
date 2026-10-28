@@ -31,7 +31,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, paddingHorizontal: 20, paddingVertical: 24, justifyContent: 'flex-start', alignItems: 'center', backgroundColor: COLORS.background },
+  screen: { flex: 1, paddingHorizontal: 20, paddingVertical: 24, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.background },
   card: { width: '100%', backgroundColor: COLORS.card, borderRadius: 20, ...Platform.select({ ios: { shadowColor: COLORS.text, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.12, shadowRadius: 16 }, android: { elevation: 6 }, web: { boxShadow: '0 8px 24px ' + COLORS.shadow } }) },
   wideCard: { maxWidth: 420 },
   banner: { width: '100%', height: 120, borderTopLeftRadius: 20, borderTopRightRadius: 20 },
