@@ -1,44 +1,28 @@
-# Profile Card — React Native
+# Profile Card — Sprint 1
 
-Expo implementation of the supplied practical task. Original requirements are in [ASSIGNMENT.md](ASSIGNMENT.md), and the six checkpoint responses are in [ANSWERS.md](ANSWERS.md).
+React Native profile card built with Expo, using View, Text, Image, Flexbox and StyleSheet.
 
 ## Run
 
-Install Node.js LTS, then run:
+Install Node.js LTS, open a terminal in this folder and run:
 
 ```sh
 npm ci
 npm start
 ```
 
-Scan the QR code with an Expo Go version compatible with this project's Expo SDK, or open an Android/iOS emulator. For the browser preview, run `npm run web`.
+On Windows PowerShell, use `npm.cmd ci` and `npm.cmd start` if script execution is blocked.
 
-## Implementation
+With an Android emulator running, press `a` in the Expo terminal. You can also scan the QR code with a compatible Expo Go app on your phone. For a browser preview, run `npm run web`.
 
-- Core View, Text and Image components with named StyleSheet styles.
-- Local banner and avatar, overlapping avatar and absolute online indicator.
-- Equal-width statistics and action layouts; wrapping skill tags.
-- Centralized colors, platform-specific shadows and rounded corners.
-- Bonus: reusable StatItem and Tag components, Skills heading and a 420-point maximum card width when the screen is wider than 600 points.
-- Follow and Message are visual-only, as requested by the assignment.
+## Task
 
-## Submission
+The card includes a banner, circular avatar, online badge, biography, statistics, skill tags and two visual action buttons. Follow and Message have no interaction, as requested.
 
-Screenshot of the app running in the Android emulator:
+Bonus features: reusable StatItem and Tag components, a Skills heading and a maximum card width of 420 on screens wider than 600.
 
-![Profile card in Android emulator](screenshot-android.png)
+The six checkpoint answers are in [ANSWERS.md](ANSWERS.md).
 
-Validation: Android, iOS and web exports completed; ESLint and TypeScript checks passed; Expo Doctor passed 20/20 checks. The web preview ran without JavaScript errors. The app was also launched in the Android emulator, as shown above. A physical-device run of this profile card remains to be checked. npm reported 8 dependency advisories (5 low, 3 high) in the generated dependency tree; no forced major upgrades were applied.
+## Android emulator
 
-```sh
-npm run lint
-npm run typecheck
-```
-
-Work is on `task/profile-card`, with commits for the five steps. Push `main` and `task/profile-card` to your GitHub repository, then open a Pull Request from `task/profile-card` to `main` and attach a screenshot of the running app. `expected-result.png` is the assignment reference, not proof of a run.
-
-```sh
-git remote add origin https://github.com/BastianMardones/react-profile-card.git
-git push -u origin main
-git push -u origin task/profile-card
-```
+![Profile card running on Android](screenshot-android.png)
