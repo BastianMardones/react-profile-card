@@ -24,11 +24,11 @@ Scan the QR code with an Expo Go version compatible with this project's Expo SDK
 
 ## Submission
 
-Preview captured from the running web version (390 × 844 viewport):
+Screenshot of the app running in the Android emulator:
 
-![Profile card web preview](screenshot-web.png)
+![Profile card in Android emulator](screenshot-android.png)
 
-Validation: Android, iOS and web exports completed; ESLint and TypeScript checks passed; Expo Doctor passed 20/20 checks. The web preview ran without JavaScript errors. A physical-device or native-emulator run remains to be checked. npm reported 8 dependency advisories (5 low, 3 high) in the generated dependency tree; no forced major upgrades were applied.
+Validation: Android, iOS and web exports completed; ESLint and TypeScript checks passed; Expo Doctor passed 20/20 checks. The web preview ran without JavaScript errors. The app was also launched in the Android emulator, as shown above. A physical-device run of this profile card remains to be checked. npm reported 8 dependency advisories (5 low, 3 high) in the generated dependency tree; no forced major upgrades were applied.
 
 ```sh
 npm run lint
@@ -38,7 +38,7 @@ npm run typecheck
 Work is on `task/profile-card`, with commits for the five steps. Push `main` and `task/profile-card` to your GitHub repository, then open a Pull Request from `task/profile-card` to `main` and attach a screenshot of the running app. `expected-result.png` is the assignment reference, not proof of a run.
 
 ```sh
-git remote add origin https://github.com/YOUR_USERNAME/profile-card.git
+git remote add origin https://github.com/BastianMardones/react-profile-card.git
 git push -u origin main
 git push -u origin task/profile-card
 ```

@@ -30,7 +30,6 @@ const COLORS = {
   shadow: "rgba(27, 31, 42, 0.12)",
 };
 
-/** @param {{ label: string, value: string, divider: boolean }} props */
 function StatItem({ label, value, divider }) {
   return (
     <View style={[styles.stat, divider && styles.statDivider]}>
@@ -40,7 +39,6 @@ function StatItem({ label, value, divider }) {
   );
 }
 
-/** @param {{ label: string }} props */
 function Tag({ label }) {
   return (
     <View style={styles.tag}>
